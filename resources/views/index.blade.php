@@ -17,23 +17,34 @@
     <script src="/js/app.js" defer></script>
 </head>
 <body>
-
-  <div class="wrapper pl-lg-4 pt-lg-3 pb-lg-1" style="background-color:#335258;">
-    <header>
-      <h1 style="color:#ffffff;font-family: 'Alegreya Sans', sans-serif;">Title</h1>
+  {{-- 背景 --}}
+  <div class="" style="background-color:#335258;position: fixed;z-index: -1;width: 100%;height: 100%;"></div>
+  {{-- ヘッダー --}}
+  <div class="wrapper pt-4" style="background-color:#335258;text-align:center;">
+    <header style="padding:3em 0em">
+      <h1 style="color:#ffffff;display:inline-block;font-size:3.5em">Title</h1>
     </header>
+    {{-- トップ画像 --}}
+    <img src="{{ asset('/img/tmp.png') }}" width="800" class="img-fluid">
   </div>
-  <div class="wrapper" style="position:fixed;right:0;left:0;background-color:#448c9c;">
-    <div class="content my-lg-4 mx-lg-5 p-lg-3" style="background-color:#ffffff;">
+
+  <div class="wrapper" style="background-color:#448c9c;">
+    <div class="content mx-lg-5 pt-lg-3" style="background-color:#ffffff;">
       <div class="container-fluid">
         <header>
-          <h1 style="font-family: 'Alegreya Sans', sans-serif;">Works</h1>
+          <h1>Works</h1>
         </header>
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="{{ asset('/img/tmp.png') }}" width="400" class="img-fluid">
+            <div>hogehoge</div>
+          </div>
+          <div class="col-lg-6">
+            <img src="{{ asset('/img/tmp.png') }}" width="400" class="img-fluid">
+            <div>hogehoge</div>
+          </div>
+        </div>
       </div>
-      <section>
-        <img src="{{ asset('/img/tmp.png') }}" style="width:400px;height:300px">
-      </section>
-
 
 
           <div class="container py-4">
@@ -89,10 +100,24 @@
             </tr>
           </table>
 
-
-
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-4" style="height: 100px;background-color: #000000;">
+                <span style="color:#ffffff">Image</span>
+              </div>
+              <div class="col-lg-8" style="background-color: #aaaaaa;">
+                <span style="color:#ffffff">Profile</span>
+              </div>
+          </div>
+        </div>
 
     </div>
+  </div>
+  {{-- フッター --}}
+  <div class="wrapper" style="background-color:#335258;">
+    <footer style="padding:3em 0em;">
+      <h1 style="color:#ffffff;">Footer</h1>
+    </footer>
   </div>
 
 
