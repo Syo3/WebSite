@@ -11,6 +11,7 @@
 
     {{-- css --}}
     <link rel="stylesheet" href="/css/app.css">
+    {{-- calcがandroid 4.x以上でないと表示されない --}}
     <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
     <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
     {{-- js --}}
@@ -32,84 +33,39 @@
     <div class="content mx-lg-5 pt-lg-3" style="background-color:#ffffff;">
       <div class="container-fluid">
         <header>
-          <h1>Works</h1>
+          <h1>Image</h1>
         </header>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 show_content">
             <img src="{{ asset('/img/tmp.png') }}" width="400" class="img-fluid">
-            <div>hogehoge</div>
+            <div class="detail_text">hogehoge</div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 show_content">
             <img src="{{ asset('/img/tmp.png') }}" width="400" class="img-fluid">
-            <div>hogehoge</div>
+            <div class="detail_text">hogehoge</div>
           </div>
         </div>
       </div>
 
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-2 bg-info">col-xs-2</div>
+          <div class="col-lg-6 bg-success">col-xs-6</div>
+          <div class="col-lg-2 bg-warning">col-xs-2</div>
+          <div class="col-lg-2 bg-danger">col-xs-2</div>
+        </div>
+      </div>
 
-          <div class="container py-4">
-              Hello World
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4" style="background-color: #000000;">
+            <img src="{{ asset('/img/tmp.png') }}" class="rounded-circle img-fluid">
           </div>
-
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-xs-2 bg-info">col-xs-2</div>
-              <div class="col-xs-6 bg-success">col-xs-6</div>
-              <div class="col-xs-2 bg-warning">col-xs-2</div>
-              <div class="col-xs-2 bg-danger">col-xs-2</div>
-            </div>
-          </div>
-
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-2 bg-info">col-xs-2</div>
-              <div class="col-lg-6 bg-success">col-xs-6</div>
-              <div class="col-lg-2 bg-warning">col-xs-2</div>
-              <div class="col-lg-2 bg-danger">col-xs-2</div>
-            </div>
-          </div>
-
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-xs-5 bg-info">col-xs-5</div>
-              <div class="col-xs-offset-1 col-xs-6 bg-success">col-xs-6</div>
-            </div>
-          </div>
-
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-xs-2 col-xs-push-4 bg-danger">1</div>
-              <div class="col-xs-2 bg-info">2</div>
-              <div class="col-xs-2 col-xs-pull-4 bg-success">3</div>
-              <div class="col-xs-2 bg-warning">4</div>
-            </div>
-          </div>
-
-          <table class="table table-striped">
-            <tr>
-              <th>Name</th><th>Age</th>
-            </tr>
-            <tr>
-              <td>Yamada</td><td>16</td>
-            </tr>
-            <tr>
-              <td>Suzuki</td><td>26</td>
-            </tr>
-            <tr>
-              <td>Tanaka</td><td>36</td>
-            </tr>
-          </table>
-
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-4" style="height: 100px;background-color: #000000;">
-                <span style="color:#ffffff">Image</span>
-              </div>
-              <div class="col-lg-8" style="background-color: #aaaaaa;">
-                <span style="color:#ffffff">Profile</span>
-              </div>
+          <div class="col-lg-8" style="background-color: #aaaaaa;">
+            <span style="color:#ffffff">Profile</span>
           </div>
         </div>
+      </div>
 
     </div>
   </div>
@@ -119,10 +75,6 @@
       <h1 style="color:#ffffff;">Footer</h1>
     </footer>
   </div>
-
-
-
-
 
 </body>
 </html>

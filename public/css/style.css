@@ -1,4 +1,9 @@
 body{
   font-family: 'Alegreya Sans', sans-serif;
   text-align: center;
+  font-size: calc(112.5% + 0.5vw);
+}
+
+.show_content .detail_text{
+  padding:1em;
 }
