@@ -18,7 +18,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     {{-- js --}}
     <script src="/js/app.js" defer></script>
-    <script src="/js/index.js" defer></script>
+    <script src="/js/index.js?{{ date('YmdHis') }}" defer></script>
 </head>
 <body>
   {{-- 背景 --}}
@@ -29,7 +29,9 @@
       <h1 style="color:#ffffff;display:inline-block;font-size:3.5em">Title</h1>
     </header>
     {{-- トップ画像 --}}
-    <img src="{{ asset('/img/tmp.png') }}" width="800" class="img-fluid">
+    <div style="width:1000px;height:600px;background-color:black;">
+      <img src="{{ asset('/img/tmp.png') }}" style="width:300px;object-fit:contain;">
+    </div>
   </div>
 
   <div class="wrapper" style="background-color:#448c9c;">
