@@ -14,8 +14,11 @@
     {{-- calcがandroid 4.x以上でないと表示されない --}}
     <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
     <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
+    {{-- jquery --}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     {{-- js --}}
     <script src="/js/app.js" defer></script>
+    <script src="/js/index.js" defer></script>
 </head>
 <body>
   {{-- 背景 --}}
