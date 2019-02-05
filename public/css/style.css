@@ -7,3 +7,12 @@ body{
 .show_content .detail_text{
   padding:1em;
 }
+
+.work_frame{
+    background-color: #eeeeee;
+    border: solid 3px #dddddd;
+    border-radius: 10px;
+    max-width: 18em;
+    margin-left: auto;
+    margin-right: auto;
+}

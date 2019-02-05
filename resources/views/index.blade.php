@@ -21,18 +21,49 @@
     <script src="/js/index.js?{{ date('YmdHis') }}" defer></script>
 </head>
 <body>
-  {{-- 背景 --}}
-  <div class="" style="background-color:#335258;position: fixed;z-index: -1;width: 100%;height: 100%;"></div>
-  {{-- ヘッダー --}}
-  <div class="wrapper pt-4" style="background-color:#335258;text-align:center;">
-    <header style="padding:3em 0em">
-      <h1 style="color:#ffffff;display:inline-block;font-size:3.5em">Title</h1>
-    </header>
-    {{-- トップ画像 --}}
-    <div style="width:1000px;height:600px;background-color:black;">
-      <img src="{{ asset('/img/tmp.png') }}" style="width:300px;object-fit:contain;">
+    {{-- 背景 --}}
+    <div class="" style="background-color:#335258;position: fixed;z-index: -1;width: 100%;height: 100%;"></div>
+    {{-- ヘッダー --}}
+    <div class="wrapper pt-4" style="background-color:#335258;text-align:center;">
+        <header style="padding:3em 0em">
+            <h1 style="color:#ffffff;display:inline-block;font-size:3.5em">Title</h1>
+        </header>
+        {{-- トップ画像 --}}
+        {{-- 枠をレスポンシブに --}}
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-8" style="background-color:rgba(0,0,0,0);height:500px;">
+                <div class="rotate" style="position:absolute;top:50%;left:50%;width:100%;height:auto;transform:translate(-50%, -50%);-webkit-transform:translate(-50%, -50%);">
+                    <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-4" style="height:200px">
+                            <img src="{{ asset('/img/tmp.png') }}">
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4" style="height:200px">
+                            <img src="{{ asset('/img/tmp.png') }}">
+                        </div>
+                        <div class="col-4"></div>
+                        <div class="col-4" style="height:200px">
+                            <img src="{{ asset('/img/tmp.png') }}">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-4" style="height:200px">
+                            <img src="{{ asset('/img/tmp.png') }}">
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+        </div>
     </div>
-  </div>
 
   <div class="wrapper" style="background-color:#448c9c;">
     <div class="content mx-lg-5 pt-lg-3" style="background-color:#ffffff;">
@@ -42,12 +73,16 @@
         </header>
         <div class="row">
           <div class="col-lg-6 show_content">
-            <img src="{{ asset('/img/tmp.png') }}" width="400" class="img-fluid">
-            <div class="detail_text">hogehoge</div>
+              <div class="work_frame">
+                  <img src="{{ asset('/img/tmp.png') }}" width="400" class="img-fluid">
+                  <div class="detail_text">hogehoge</div>
+              </div>
           </div>
           <div class="col-lg-6 show_content">
-            <img src="{{ asset('/img/tmp.png') }}" width="400" class="img-fluid">
-            <div class="detail_text">hogehoge</div>
+              <div class="work_frame">
+                  <img src="{{ asset('/img/tmp.png') }}" width="400" class="img-fluid">
+                  <div class="detail_text">hogehoge</div>
+              </div>
           </div>
         </div>
       </div>
