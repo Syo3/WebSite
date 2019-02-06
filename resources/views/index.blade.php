@@ -33,31 +33,15 @@
         <div class="container-fluid">
         <div class="row">
             <div class="col-lg-2"></div>
-            <div class="col-8" style="background-color:rgba(0,0,0,0);height:500px;">
-                <div class="rotate" style="position:absolute;top:50%;left:50%;width:100%;height:auto;transform:translate(-50%, -50%);-webkit-transform:translate(-50%, -50%);">
-                    <div class="row">
-                        <div class="col-4"></div>
-                        <div class="col-4" style="height:200px">
-                            <img src="{{ asset('/img/tmp.png') }}">
-                        </div>
-                        <div class="col-4"></div>
+            <div class="col-lg-8 row" style="background-color:rgba(0,0,0,0);">
+                <div class="col-lg-12" style="overflow:hidden;width:100%;">
+                    <div style="overflow-x:scroll;width:1500px;position:absolute;height:100%;text-align:left;">
+                        <img src="{{ asset('/img/tmp.png') }}" class="img-fluid">
+                        <img src="{{ asset('/img/tmp.png') }}" class="img-fluid">
+                        <img src="{{ asset('/img/tmp.png') }}" class="img-fluid">
                     </div>
-                    <div class="row">
-                        <div class="col-4" style="height:200px">
-                            <img src="{{ asset('/img/tmp.png') }}">
-                        </div>
-                        <div class="col-4"></div>
-                        <div class="col-4" style="height:200px">
-                            <img src="{{ asset('/img/tmp.png') }}">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-4"></div>
-                        <div class="col-4" style="height:200px">
-                            <img src="{{ asset('/img/tmp.png') }}">
-                        </div>
-                        <div class="col-4"></div>
-                    </div>
+                    {{-- サイズ調整用 --}}
+                    <img src="{{ asset('/img/tmp.png') }}" class="img-fluid" style="opacity:0">
                 </div>
             </div>
             <div class="col-lg-2"></div>
